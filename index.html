@@ -1,0 +1,480 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Uday Raut | Social Profiles</title>
+
+  <meta
+    name="description"
+    content="Official social media and online profiles of Uday Raut and Ugenz Academy."
+  />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+
+    .profile-card {
+      transition: all 0.25s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .link-card {
+      transition: all 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .link-card:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-900">
+
+  <!-- Background -->
+  <div class="fixed inset-0 -z-10 overflow-hidden">
+    <div
+      class="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-blue-200/50 blur-3xl"
+    ></div>
+
+    <div
+      class="absolute -right-32 top-1/3 h-80 w-80 rounded-full bg-purple-200/40 blur-3xl"
+    ></div>
+
+    <div
+      class="absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-yellow-200/30 blur-3xl"
+    ></div>
+  </div>
+
+
+  <!-- MAIN -->
+  <main class="mx-auto max-w-2xl px-5 py-10 sm:py-14">
+
+    <!-- Header -->
+    <header class="text-center">
+
+      <!-- Main Profile Image -->
+      <div
+        class="mx-auto flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-slate-900 text-3xl font-bold text-white shadow-xl ring-4 ring-white"
+      >
+        UR
+      </div>
+
+      <h1 class="mt-5 text-3xl font-bold tracking-tight">
+        Uday Raut
+      </h1>
+
+      <p class="mt-2 text-sm text-slate-500">
+        My official online profiles
+      </p>
+
+      <p class="mx-auto mt-3 max-w-lg text-sm leading-6 text-slate-500">
+        Find all my social media, projects, websites and other online
+        profiles in one place.
+      </p>
+
+    </header>
+
+
+    <!-- Profiles will automatically appear here -->
+    <div id="profiles" class="mt-10 space-y-8"></div>
+
+
+    <!-- Footer -->
+    <footer class="mt-12 border-t border-slate-200 pt-8 text-center">
+
+      <p class="text-sm font-medium text-slate-600">
+        Uday Raut
+      </p>
+
+      <p class="mt-1 text-xs text-slate-400">
+        Learn • Build • Create • Grow
+      </p>
+
+      <p class="mt-4 text-xs text-slate-400">
+        © <span id="year"></span> Uday Raut
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <!-- =========================================================
+       EDIT ONLY THIS SECTION
+       ========================================================= -->
+
+  <script>
+
+    const profiles = [
+
+      // =======================================================
+      // PROFILE 1
+      // =======================================================
+
+      {
+        name: "Uday Raut",
+
+        username: "@udayraut128",
+
+        description: "Personal profiles & projects",
+
+        image: "",
+
+        verified: true,
+
+        links: [
+
+          {
+            name: "Instagram",
+            username: "@udayraut128",
+            url: "https://www.instagram.com/udayraut128/",
+            icon: "fa-brands fa-instagram",
+            color: "pink"
+          },
+
+          {
+            name: "Facebook",
+            username: "Uday Raut",
+            url: "https://www.facebook.com/udayraut128",
+            icon: "fa-brands fa-facebook-f",
+            color: "blue"
+          },
+
+          {
+            name: "TikTok",
+            username: "@udayraut128",
+            url: "https://www.tiktok.com/@udayraut128",
+            icon: "fa-brands fa-tiktok",
+            color: "black"
+          },
+
+          {
+            name: "GitHub",
+            username: "udayraut128",
+            url: "https://github.com/udayraut128",
+            icon: "fa-brands fa-github",
+            color: "black"
+          }
+
+        ]
+      },
+
+
+      // =======================================================
+      // PROFILE 2
+      // =======================================================
+
+      {
+        name: "Ugenz Academy",
+
+        username: "@ugenzacademy",
+
+        description: "Learn • Build • Protect • Grow",
+
+        image: "",
+
+        verified: true,
+
+        links: [
+
+          {
+            name: "Instagram",
+            username: "@ugenzacademy",
+            url: "https://www.instagram.com/ugenzacademy",
+            icon: "fa-brands fa-instagram",
+            color: "pink"
+          },
+
+          {
+            name: "Facebook",
+            username: "Ugenz Academy",
+            url: "https://www.facebook.com/ugenzacademy",
+            icon: "fa-brands fa-facebook-f",
+            color: "blue"
+          },
+
+          {
+            name: "TikTok",
+            username: "@ugenz_academy",
+            url: "https://www.tiktok.com/@ugenz_academy",
+            icon: "fa-brands fa-tiktok",
+            color: "black"
+          },
+
+          {
+            name: "YouTube",
+            username: "@ugenzacademy",
+            url: "https://www.youtube.com/@ugenzacademy",
+            icon: "fa-brands fa-youtube",
+            color: "red"
+          },
+
+          {
+            name: "GitHub",
+            username: "Ugenz-academy",
+            url: "https://github.com/Ugenz-academy",
+            icon: "fa-brands fa-github",
+            color: "black"
+          },
+
+          {
+            name: "Website",
+            username: "ugenzacademy.com",
+            url: "https://www.ugenzacademy.com/",
+            icon: "fa-solid fa-globe",
+            color: "yellow"
+          }
+
+        ]
+      }
+
+    ];
+
+
+    // =========================================================
+    // DO NOT EDIT BELOW THIS LINE
+    // =========================================================
+
+
+    const profilesContainer = document.getElementById("profiles");
+
+
+    function getColorClasses(color) {
+
+      const colors = {
+
+        pink: {
+          box: "bg-pink-100",
+          icon: "text-pink-600"
+        },
+
+        blue: {
+          box: "bg-blue-100",
+          icon: "text-blue-600"
+        },
+
+        red: {
+          box: "bg-red-100",
+          icon: "text-red-600"
+        },
+
+        yellow: {
+          box: "bg-yellow-100",
+          icon: "text-yellow-700"
+        },
+
+        green: {
+          box: "bg-green-100",
+          icon: "text-green-600"
+        },
+
+        purple: {
+          box: "bg-purple-100",
+          icon: "text-purple-600"
+        },
+
+        black: {
+          box: "bg-slate-900",
+          icon: "text-white"
+        },
+
+        gray: {
+          box: "bg-slate-100",
+          icon: "text-slate-600"
+        }
+
+      };
+
+      return colors[color] || colors.gray;
+    }
+
+
+    function createProfile(profile) {
+
+      const profileSection = document.createElement("section");
+
+      profileSection.className =
+        "profile-card rounded-3xl border border-white/70 bg-white/75 p-5 shadow-lg shadow-slate-200/50 backdrop-blur-xl";
+
+
+      // Profile image
+      let profileImage;
+
+      if (profile.image) {
+
+        profileImage = `
+          <img
+            src="${profile.image}"
+            alt="${profile.name}"
+            class="h-16 w-16 rounded-2xl object-cover shadow-md"
+          />
+        `;
+
+      } else {
+
+        profileImage = `
+          <div
+            class="flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-900 text-lg font-bold text-white shadow-md"
+          >
+            ${getInitials(profile.name)}
+          </div>
+        `;
+
+      }
+
+
+      // Verification badge
+      const verified = profile.verified
+        ? `
+          <span
+            title="Verified"
+            class="ml-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-500 text-[10px] text-white"
+          >
+            <i class="fa-solid fa-check"></i>
+          </span>
+        `
+        : "";
+
+
+      // Links
+      const linksHTML = profile.links
+        .map((link) => {
+
+          const colors = getColorClasses(link.color);
+
+          return `
+            <a
+              href="${link.url}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-card flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm hover:border-slate-200 hover:shadow-md"
+            >
+
+              <div
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${colors.box} ${colors.icon}"
+              >
+                <i class="${link.icon} text-lg"></i>
+              </div>
+
+              <div class="min-w-0 flex-1">
+
+                <p class="font-semibold text-slate-900">
+                  ${link.name}
+                </p>
+
+                <p class="truncate text-xs text-slate-500">
+                  ${link.username || link.url}
+                </p>
+
+              </div>
+
+              <div class="text-slate-300">
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+              </div>
+
+            </a>
+          `;
+
+        })
+        .join("");
+
+
+      profileSection.innerHTML = `
+
+        <!-- Profile Header -->
+
+        <div class="flex items-center gap-4">
+
+          ${profileImage}
+
+          <div class="min-w-0 flex-1">
+
+            <div class="flex items-center">
+
+              <h2 class="truncate text-lg font-bold text-slate-900">
+                ${profile.name}
+              </h2>
+
+              ${verified}
+
+            </div>
+
+            <p class="mt-0.5 text-sm text-slate-500">
+              ${profile.username}
+            </p>
+
+            <p class="mt-1 text-xs text-slate-400">
+              ${profile.description}
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Links -->
+
+        <div class="mt-5 space-y-3">
+
+          ${linksHTML}
+
+        </div>
+
+      `;
+
+
+      profilesContainer.appendChild(profileSection);
+
+    }
+
+
+    function getInitials(name) {
+
+      return name
+        .split(" ")
+        .map(word => word.charAt(0))
+        .join("")
+        .substring(0, 2)
+        .toUpperCase();
+
+    }
+
+
+    // Generate all profiles
+    profiles.forEach(createProfile);
+
+
+    // Current year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
+```
